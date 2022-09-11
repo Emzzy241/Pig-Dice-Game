@@ -25,4 +25,118 @@ main{
     width: 100rem;
     height: 60rem;
     background-color: rgba(225, 225, 225, 0.35);
+    filter: blur();
+    box-shadow: 0.3rem 5rem rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+}
+
+.player{
+    flex: 50%;
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.75s;
+}
+
+.name{
+    position: relative;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.score{
+    font-size: 8rem;
+    font-weight: 300;
+    color: #d63764;
+    margin-bottom: auto;
+}
+
+.player--active{
+    background-color: rgba(225, 225, 225, 0.4);
+}
+
+.player--active .name{
+    font-weight: 700;
+}
+
+.player--active .score{
+    font-weight: 400;
+}
+
+.player--active .current{
+    opacity: 1;
+}
+
+.current{
+    background-color: #d63764;
+    opacity: 0.8;
+    border-radius: 9px;
+    color: #fff;
+    width: 65%;
+    text-align: center;
+    transition: all 0.75s;
+}
+
+.current-label{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: #ddd;
+}
+
+.current-score{
+    font-size: 3.5rem;
+}
+
+.btn{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: #444;
+    background: none;
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.25s;
+    background-color: white;
+    background-color: rgba(225, 225, 225, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 0.7rem, 2.5rem;
+    border-radius: 50rem;
+    box-shadow: 0 1.75 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn::first-letter{
+    font-size: 2.4rem;
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.btn--new{
+    top: 4rem;
+}
+
+.btn--roll{
+    top: 39.3rem;
+}
+
+.btn--hold{
+    top: 46.1rem;
+}
+
+.btn:active{
+    transform: translate(-50%, 3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus{
+    
 }
