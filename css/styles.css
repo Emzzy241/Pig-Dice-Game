@@ -29,6 +29,7 @@ main{
     box-shadow: 0.3rem 5rem rgba(0, 0, 0, 0.25);
     overflow: hidden;
     display: flex;
+    border-radius: 10px;
 }
 
 .player{
@@ -95,6 +96,7 @@ main{
 }
 
 .btn{
+    font-size: 1.5rem;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -114,10 +116,12 @@ main{
     box-shadow: 0 1.75 3.5rem rgba(0, 0, 0, 0.1);
 }
 
+
+
 .btn::first-letter{
     font-size: 2.4rem;
     display: inline-block;
-    margin-right: 0.7rem;
+    margin-right: 0.2rem;
 }
 
 .btn--new{
@@ -138,5 +142,22 @@ main{
 }
 
 .btn:focus{
-    
+    outline: none;
+}
+
+.dice{
+    position: absolute;
+    left: 45%;
+    top: 15rem;
+    height: 10rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner{
+    font-weight: #2f2f2f;
+}
+
+.player--winner .name{
+    font-weight: 700;
+    color: #c7365f;
 }
