@@ -31,6 +31,19 @@ btnRoll.addEventListener('click', function(){
         currentscore += dice
         document.getElementById(`current--${activeplayer}`).textContent = currentscore;
     } else{
+        switchPlayer
+    }
+})
 
+btnHold.addEventListener('click', function(){
+    scores[activeplayer] += currentscore;
+    document.getElementById(`score--${activeplayer}`).textContent = scores[activeplayer]
+    if( scores[activeplayer >= 20]){
+        diceEl.classList.add('hidden');
+        document.querySelector(`.player--${activeplayer}`).classList.add('player--active')
+        document.querySelector(`.player--${activeplayer}`).classList.remove('player--active')
+        document.querySelector('body').styles.backgroundColor = '#64b347'
+    } else{
+        switchPlayer()
     }
 })
