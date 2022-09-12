@@ -1,3 +1,20 @@
+// RULES OF THE GAME:
+// RULE1: When a player rolls 1, it will not ount on the score board
+// RULE2: When a player hits 30 and holds the game, the game ends, a winner is proclaimed
+// RULE3: If a Player does not hit 30 on its first attempt before 
+// holding the game, then the other player gets to play the game
+// 
+
+// The 'use strict' Directive is to indicate that the code should be executed
+// in strict mode..... with strict mode you can not, for example, use 
+// undeclared variables.... all modern browsers support "use strict " except internet Explorer 9 and lower: Directive
+
+// This is also used to eliminate silent errors
+
+
+
+
+
 'use strict';
 
 const player0El = document.querySelector('.player--0');
@@ -73,7 +90,7 @@ btnHold.addEventListener('click', function () {
             playing = false;
             }
 
-            // if player's score is now equal to 30 after hold then the game continues, and this if statement below gets run
+            // if player's score is not equal to 30 after hold then the game continues, and this if statement below gets run
 
         if (scores[activeplayer >= 20]) {
             playing = false;
