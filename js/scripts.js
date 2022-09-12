@@ -30,7 +30,7 @@ const newGame = function () {
     player1El.classList.remove('player--winner')
     player0El.classList.add('player--active')
     player0El.classList.remove('player--active')
-    document.querySelector('body').styles.backgroundColor = '#c7365f'
+    document.querySelector('body').style.backgroundColor = '#c7365f'
 }
 newGame();
 
@@ -45,7 +45,7 @@ const switchPlayer = function () {
 btnRoll.addEventListener('click', function () {
     if (playing) {
         const dice = Math.trunc(Math.random() * 6) + 1;
-        diceEl.remove('hidden')
+        diceEl.classList.remove('hidden')
         diceEl.src = `./img/dice${dice}.png`
         if (dice !== 1) {
             currentscore += dice
@@ -74,3 +74,5 @@ btnHold.addEventListener('click', function () {
     }
 
 })
+
+btnNew.addEventListener('click', newGame);
