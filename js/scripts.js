@@ -31,7 +31,7 @@ const newGame = function () {
     player0El.classList.add('player--active')
     player0El.classList.remove('player--active')
     document.querySelector('body').styles.backgroundColor = '#c7365f'
-}   
+}
 newGame();
 
 const switchPlayer = function () {
@@ -43,15 +43,19 @@ const switchPlayer = function () {
 }
 
 btnRoll.addEventListener('click', function () {
-    const dice = Math.trunc(Math.random() * 6) + 1;
-    diceEl.remove('hidden')
-    diceEl.src = `./img/dice${dice}.png`
-    if (dice !== 1) {
-        currentscore += dice
-        document.getElementById(`current--${activeplayer}`).textContent = currentscore;
-    } else {
-        switchPlayer
+    if (playing) {
+        const dice = Math.trunc(Math.random() * 6) + 1;
+        diceEl.remove('hidden')
+        diceEl.src = `./img/dice${dice}.png`
+        if (dice !== 1) {
+            currentscore += dice
+            document.getElementById(`current--${activeplayer}`).textContent = currentscore;
+        } else {
+            switchPlayer
+        }
     }
+
+
 })
 
 btnHold.addEventListener('click', function () {
