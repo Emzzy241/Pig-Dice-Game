@@ -42,6 +42,9 @@ const switchPlayer = function () {
     player1El.classList.toggle('player--active')
 }
 
+// the ES6 syntax above says: compare if my activePlayer = 0 if it is = 0, set activePlayer  = 1, else if my activePlayer is 
+// not equal to zero set activePlayer = 0
+
 btnRoll.addEventListener('click', function () {
     if (playing) {
         const dice = Math.trunc(Math.random() * 6) + 1;
@@ -62,6 +65,16 @@ btnHold.addEventListener('click', function () {
     if (playing) {
         scores[activeplayer] += currentscore;
         document.getElementById(`score--${activeplayer}`).textContent = scores[activeplayer]
+
+         // setting the winner
+
+        if(scores[activeplayer] >= 30){
+            document.querySelector(`#name--${activeplayer}`).textContent = 'Winner';
+            playing = false;
+            }
+
+            // if player's score is now equal to 30 after hold then the game continues, and this if statement below gets run
+
         if (scores[activeplayer >= 20]) {
             playing = false;
             diceEl.classList.add('hidden');
@@ -71,6 +84,11 @@ btnHold.addEventListener('click', function () {
         } else {
             switchPlayer()
         }
+
+       
+
+       
+
     }
 
 })
