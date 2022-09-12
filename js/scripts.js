@@ -15,8 +15,22 @@ let scores = [0, 0];
 let currentscore = 0;
 let activeplayer = 0;
 
+const switchPlayer = function(){
+    document.getElementById(`current--${activeplayer}`).textContent = 0;
+    currentscore = 0;
+    activeplayer = activeplayer === 0 ? 1 : 0;
+    player0El.classList.toggle('player--active')
+    player1El.classList.toggle('player--active')
+}
+
 btnRoll.addEventListener('click', function(){
     const dice = Math.trunc(Math.random() * 6) + 1;
     diceEl.remove('hidden')
-    diceEl.src = ''
+    diceEl.src = `./img/dice${dice}.png`
+    if(dice !== 1){
+        currentscore += dice
+        document.getElementById(`current--${activeplayer}`).textContent = currentscore;
+    } else{
+
+    }
 })
