@@ -2,7 +2,7 @@
 
 #### made by Mojiboye Emmanuel
 
-### A game of chance with a die
+### A game of chance with a die... Hint: first to get to 30 becomes the winner
 
 ### Technologies Used
 * Git
@@ -10,7 +10,6 @@
 * CSS
 * BootStrap
 * Javscript 
-* jQuery
 * Bootstrap
 
 
