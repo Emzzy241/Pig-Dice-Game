@@ -16,17 +16,22 @@
 ### Description
 _In this game there are two players: named: Player1, and player2 and each Player gets the chance to roll the die and the first person to get to 30 dice points and then hold the game becomes the winner_
 
+## ADDITIONAL INFO
+_This game was made in vanilla JavaScript only, along the line I might be updating my github repository to include a jQuery version of the game just to make it easier to developers who are used to the jQuery Library and not pure vanilla JavaScript... But as for now, enjoy the game in vanilla_ 
+
 ## Setup/Installation
 * _Open the directory._
 * _Click on the index.html file._
 _Note: the website is designed to run on a web browser just be sure you have one. _
 * _That's all the installation process you need to carry out. Have fun while working with this application. If you think its cool, be sure to give the application a thumbs up_
 
+
 ## Known Bugs
 _As at the launching of this Project there are zero bugs in it. But if you do find a bug in it, be sure to notify me via my various social media handles below_
 
 ## WEBSITE LINK
 https://emzzy241.github.io/Address-BOOK-2.0/
+
 
 
 ## License 
