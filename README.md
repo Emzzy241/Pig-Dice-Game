@@ -10,11 +10,11 @@
 * CSS
 * BootStrap
 * Javscript 
-* Bootstrap
+* Vanilla JavaScript
 
 
 ### Description
-_In this game there are two players: named: Player1, and player2 and each Player gets the chance to roll the die and the first person to get to 30 dice points will be the winner_
+_In this game there are two players: named: Player1, and player2 and each Player gets the chance to roll the die and the first person to get to 30 dice points and then hold the game becomes the winner_
 
 ## Setup/Installation
 * _Open the directory._
