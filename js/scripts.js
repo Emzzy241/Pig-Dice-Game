@@ -29,6 +29,9 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
+
+// diceEl.classList.add("shake");
+
 let scores, currentscore, activeplayer, playing;
 
 const newGame = function () {
@@ -67,6 +70,7 @@ btnRoll.addEventListener('click', function () {
     if (playing) {
         const dice = Math.trunc(Math.random() * 6) + 1;
         diceEl.classList.remove('hidden')
+        
         diceEl.src = `./img/dice${dice}.png`
         if (dice !== 1) {
             currentscore += dice
@@ -75,6 +79,7 @@ btnRoll.addEventListener('click', function () {
             switchPlayer
         }
     }
+    
 
 
 })
